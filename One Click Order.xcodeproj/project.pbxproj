@@ -1,0 +1,766 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		05124EECEC4BB1E7517FC778 /* Pods_One_Click_OrderTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97CDE781F4089610BFA86325 /* Pods_One_Click_OrderTests.framework */; };
+		0E151607754B703B5376BCC7 /* Pods_One_Click_OrderUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA750B9CDBC6A7B5385DA55D /* Pods_One_Click_OrderUITests.framework */; };
+		28CB2E1110C3ACF05683D2E0 /* Pods_One_Click_Order.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69207556ED32316FACF8FE26 /* Pods_One_Click_Order.framework */; };
+		F73E0AF8220EB6CF00C31C8E /* EnterInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73E0AF7220EB6CF00C31C8E /* EnterInfoViewController.swift */; };
+		F73E0AFA220F394900C31C8E /* NetworkHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73E0AF9220F394900C31C8E /* NetworkHelpers.swift */; };
+		F73E0AFC2210033500C31C8E /* OrderDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73E0AFB2210033500C31C8E /* OrderDetailsViewController.swift */; };
+		F75BACC0220E840D0056ECDC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75BACBF220E840D0056ECDC /* AppDelegate.swift */; };
+		F75BACC5220E840D0056ECDC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F75BACC3220E840D0056ECDC /* Main.storyboard */; };
+		F75BACC7220E840F0056ECDC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F75BACC6220E840F0056ECDC /* Assets.xcassets */; };
+		F75BACCA220E840F0056ECDC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F75BACC8220E840F0056ECDC /* LaunchScreen.storyboard */; };
+		F75BACD5220E840F0056ECDC /* One_Click_OrderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75BACD4220E840F0056ECDC /* One_Click_OrderTests.swift */; };
+		F75BACE0220E84100056ECDC /* One_Click_OrderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75BACDF220E84100056ECDC /* One_Click_OrderUITests.swift */; };
+		F75BACF0220E84F60056ECDC /* OrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75BACEF220E84F60056ECDC /* OrderViewController.swift */; };
+		F75BACF2220E85080056ECDC /* EnterInfoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75BACF1220E85080056ECDC /* EnterInfoTableViewController.swift */; };
+		F75BACF4220E863B0056ECDC /* PresenterDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75BACF3220E863B0056ECDC /* PresenterDelegate.swift */; };
+		F75BACF6220E90B50056ECDC /* Checkbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75BACF5220E90B50056ECDC /* Checkbox.swift */; };
+		F75BACF8220E93EA0056ECDC /* PreferenceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75BACF7220E93EA0056ECDC /* PreferenceTableViewCell.swift */; };
+		F75BACFA220E98500056ECDC /* PreferenceItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75BACF9220E98500056ECDC /* PreferenceItem.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F75BACD1220E840F0056ECDC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F75BACB4220E840D0056ECDC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F75BACBB220E840D0056ECDC;
+			remoteInfo = "One Click Order";
+		};
+		F75BACDC220E84100056ECDC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F75BACB4220E840D0056ECDC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F75BACBB220E840D0056ECDC;
+			remoteInfo = "One Click Order";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		23755C53D4805130894755A6 /* Pods-One Click OrderTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-One Click OrderTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-One Click OrderTests/Pods-One Click OrderTests.debug.xcconfig"; sourceTree = "<group>"; };
+		29C27D73F60EF1B9D4995E17 /* Pods-One Click Order.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-One Click Order.debug.xcconfig"; path = "Pods/Target Support Files/Pods-One Click Order/Pods-One Click Order.debug.xcconfig"; sourceTree = "<group>"; };
+		579D354A71A442C254097B95 /* Pods-One Click OrderTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-One Click OrderTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-One Click OrderTests/Pods-One Click OrderTests.release.xcconfig"; sourceTree = "<group>"; };
+		69207556ED32316FACF8FE26 /* Pods_One_Click_Order.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_One_Click_Order.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		97CDE781F4089610BFA86325 /* Pods_One_Click_OrderTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_One_Click_OrderTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		992A311066345AEBF39BF6E1 /* Pods-One Click OrderUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-One Click OrderUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-One Click OrderUITests/Pods-One Click OrderUITests.release.xcconfig"; sourceTree = "<group>"; };
+		BAD2D2547F30A15E7A4BA326 /* Pods-One Click OrderUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-One Click OrderUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-One Click OrderUITests/Pods-One Click OrderUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		C49AFF2ACB1820E946ACD7D2 /* Pods-One Click Order.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-One Click Order.release.xcconfig"; path = "Pods/Target Support Files/Pods-One Click Order/Pods-One Click Order.release.xcconfig"; sourceTree = "<group>"; };
+		EA750B9CDBC6A7B5385DA55D /* Pods_One_Click_OrderUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_One_Click_OrderUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F73E0AF7220EB6CF00C31C8E /* EnterInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterInfoViewController.swift; sourceTree = "<group>"; };
+		F73E0AF9220F394900C31C8E /* NetworkHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkHelpers.swift; sourceTree = "<group>"; };
+		F73E0AFB2210033500C31C8E /* OrderDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderDetailsViewController.swift; sourceTree = "<group>"; };
+		F75BACBC220E840D0056ECDC /* One Click Order.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "One Click Order.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F75BACBF220E840D0056ECDC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F75BACC4220E840D0056ECDC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F75BACC6220E840F0056ECDC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F75BACC9220E840F0056ECDC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F75BACCB220E840F0056ECDC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F75BACD0220E840F0056ECDC /* One Click OrderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "One Click OrderTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F75BACD4220E840F0056ECDC /* One_Click_OrderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = One_Click_OrderTests.swift; sourceTree = "<group>"; };
+		F75BACD6220E840F0056ECDC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F75BACDB220E84100056ECDC /* One Click OrderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "One Click OrderUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F75BACDF220E84100056ECDC /* One_Click_OrderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = One_Click_OrderUITests.swift; sourceTree = "<group>"; };
+		F75BACE1220E84100056ECDC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F75BACEF220E84F60056ECDC /* OrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewController.swift; sourceTree = "<group>"; };
+		F75BACF1220E85080056ECDC /* EnterInfoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterInfoTableViewController.swift; sourceTree = "<group>"; };
+		F75BACF3220E863B0056ECDC /* PresenterDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresenterDelegate.swift; sourceTree = "<group>"; };
+		F75BACF5220E90B50056ECDC /* Checkbox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Checkbox.swift; sourceTree = "<group>"; };
+		F75BACF7220E93EA0056ECDC /* PreferenceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferenceTableViewCell.swift; sourceTree = "<group>"; };
+		F75BACF9220E98500056ECDC /* PreferenceItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferenceItem.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F75BACB9220E840D0056ECDC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28CB2E1110C3ACF05683D2E0 /* Pods_One_Click_Order.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F75BACCD220E840F0056ECDC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05124EECEC4BB1E7517FC778 /* Pods_One_Click_OrderTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F75BACD8220E84100056ECDC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E151607754B703B5376BCC7 /* Pods_One_Click_OrderUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		09DF4F350C3D1FDCE0A07012 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				69207556ED32316FACF8FE26 /* Pods_One_Click_Order.framework */,
+				97CDE781F4089610BFA86325 /* Pods_One_Click_OrderTests.framework */,
+				EA750B9CDBC6A7B5385DA55D /* Pods_One_Click_OrderUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1137C6E298A64749CF279457 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				29C27D73F60EF1B9D4995E17 /* Pods-One Click Order.debug.xcconfig */,
+				C49AFF2ACB1820E946ACD7D2 /* Pods-One Click Order.release.xcconfig */,
+				23755C53D4805130894755A6 /* Pods-One Click OrderTests.debug.xcconfig */,
+				579D354A71A442C254097B95 /* Pods-One Click OrderTests.release.xcconfig */,
+				BAD2D2547F30A15E7A4BA326 /* Pods-One Click OrderUITests.debug.xcconfig */,
+				992A311066345AEBF39BF6E1 /* Pods-One Click OrderUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F75BACB3220E840D0056ECDC = {
+			isa = PBXGroup;
+			children = (
+				F75BACBE220E840D0056ECDC /* One Click Order */,
+				F75BACD3220E840F0056ECDC /* One Click OrderTests */,
+				F75BACDE220E84100056ECDC /* One Click OrderUITests */,
+				F75BACBD220E840D0056ECDC /* Products */,
+				1137C6E298A64749CF279457 /* Pods */,
+				09DF4F350C3D1FDCE0A07012 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F75BACBD220E840D0056ECDC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F75BACBC220E840D0056ECDC /* One Click Order.app */,
+				F75BACD0220E840F0056ECDC /* One Click OrderTests.xctest */,
+				F75BACDB220E84100056ECDC /* One Click OrderUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F75BACBE220E840D0056ECDC /* One Click Order */ = {
+			isa = PBXGroup;
+			children = (
+				F75BACBF220E840D0056ECDC /* AppDelegate.swift */,
+				F75BACC3220E840D0056ECDC /* Main.storyboard */,
+				F75BACC6220E840F0056ECDC /* Assets.xcassets */,
+				F75BACC8220E840F0056ECDC /* LaunchScreen.storyboard */,
+				F75BACCB220E840F0056ECDC /* Info.plist */,
+				F75BACEF220E84F60056ECDC /* OrderViewController.swift */,
+				F75BACF1220E85080056ECDC /* EnterInfoTableViewController.swift */,
+				F75BACF3220E863B0056ECDC /* PresenterDelegate.swift */,
+				F75BACF5220E90B50056ECDC /* Checkbox.swift */,
+				F75BACF7220E93EA0056ECDC /* PreferenceTableViewCell.swift */,
+				F75BACF9220E98500056ECDC /* PreferenceItem.swift */,
+				F73E0AF7220EB6CF00C31C8E /* EnterInfoViewController.swift */,
+				F73E0AF9220F394900C31C8E /* NetworkHelpers.swift */,
+				F73E0AFB2210033500C31C8E /* OrderDetailsViewController.swift */,
+			);
+			path = "One Click Order";
+			sourceTree = "<group>";
+		};
+		F75BACD3220E840F0056ECDC /* One Click OrderTests */ = {
+			isa = PBXGroup;
+			children = (
+				F75BACD4220E840F0056ECDC /* One_Click_OrderTests.swift */,
+				F75BACD6220E840F0056ECDC /* Info.plist */,
+			);
+			path = "One Click OrderTests";
+			sourceTree = "<group>";
+		};
+		F75BACDE220E84100056ECDC /* One Click OrderUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F75BACDF220E84100056ECDC /* One_Click_OrderUITests.swift */,
+				F75BACE1220E84100056ECDC /* Info.plist */,
+			);
+			path = "One Click OrderUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F75BACBB220E840D0056ECDC /* One Click Order */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F75BACE4220E84100056ECDC /* Build configuration list for PBXNativeTarget "One Click Order" */;
+			buildPhases = (
+				12DC29E4D83BE99F5DA6E628 /* [CP] Check Pods Manifest.lock */,
+				F75BACB8220E840D0056ECDC /* Sources */,
+				F75BACB9220E840D0056ECDC /* Frameworks */,
+				F75BACBA220E840D0056ECDC /* Resources */,
+				663AF9D1A7C488A16BF9F2C2 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "One Click Order";
+			productName = "One Click Order";
+			productReference = F75BACBC220E840D0056ECDC /* One Click Order.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F75BACCF220E840F0056ECDC /* One Click OrderTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F75BACE7220E84100056ECDC /* Build configuration list for PBXNativeTarget "One Click OrderTests" */;
+			buildPhases = (
+				6B25CFD1CE30079A4976B845 /* [CP] Check Pods Manifest.lock */,
+				F75BACCC220E840F0056ECDC /* Sources */,
+				F75BACCD220E840F0056ECDC /* Frameworks */,
+				F75BACCE220E840F0056ECDC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F75BACD2220E840F0056ECDC /* PBXTargetDependency */,
+			);
+			name = "One Click OrderTests";
+			productName = "One Click OrderTests";
+			productReference = F75BACD0220E840F0056ECDC /* One Click OrderTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F75BACDA220E84100056ECDC /* One Click OrderUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F75BACEA220E84100056ECDC /* Build configuration list for PBXNativeTarget "One Click OrderUITests" */;
+			buildPhases = (
+				61EECB64920FB6A663EA6353 /* [CP] Check Pods Manifest.lock */,
+				F75BACD7220E84100056ECDC /* Sources */,
+				F75BACD8220E84100056ECDC /* Frameworks */,
+				F75BACD9220E84100056ECDC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F75BACDD220E84100056ECDC /* PBXTargetDependency */,
+			);
+			name = "One Click OrderUITests";
+			productName = "One Click OrderUITests";
+			productReference = F75BACDB220E84100056ECDC /* One Click OrderUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F75BACB4220E840D0056ECDC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Harry Merzin";
+				TargetAttributes = {
+					F75BACBB220E840D0056ECDC = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					F75BACCF220E840F0056ECDC = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = F75BACBB220E840D0056ECDC;
+					};
+					F75BACDA220E84100056ECDC = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = F75BACBB220E840D0056ECDC;
+					};
+				};
+			};
+			buildConfigurationList = F75BACB7220E840D0056ECDC /* Build configuration list for PBXProject "One Click Order" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F75BACB3220E840D0056ECDC;
+			productRefGroup = F75BACBD220E840D0056ECDC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F75BACBB220E840D0056ECDC /* One Click Order */,
+				F75BACCF220E840F0056ECDC /* One Click OrderTests */,
+				F75BACDA220E84100056ECDC /* One Click OrderUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F75BACBA220E840D0056ECDC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F75BACCA220E840F0056ECDC /* LaunchScreen.storyboard in Resources */,
+				F75BACC7220E840F0056ECDC /* Assets.xcassets in Resources */,
+				F75BACC5220E840D0056ECDC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F75BACCE220E840F0056ECDC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F75BACD9220E84100056ECDC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		12DC29E4D83BE99F5DA6E628 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-One Click Order-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		61EECB64920FB6A663EA6353 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-One Click OrderUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		663AF9D1A7C488A16BF9F2C2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-One Click Order/Pods-One Click Order-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/MDFInternationalization/MDFInternationalization.framework",
+				"${BUILT_PRODUCTS_DIR}/MaterialComponents/MaterialComponents.framework",
+				"${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MDFInternationalization.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MaterialComponents.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NVActivityIndicatorView.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-One Click Order/Pods-One Click Order-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6B25CFD1CE30079A4976B845 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-One Click OrderTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F75BACB8220E840D0056ECDC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F75BACF2220E85080056ECDC /* EnterInfoTableViewController.swift in Sources */,
+				F73E0AF8220EB6CF00C31C8E /* EnterInfoViewController.swift in Sources */,
+				F75BACF4220E863B0056ECDC /* PresenterDelegate.swift in Sources */,
+				F75BACC0220E840D0056ECDC /* AppDelegate.swift in Sources */,
+				F75BACF0220E84F60056ECDC /* OrderViewController.swift in Sources */,
+				F75BACFA220E98500056ECDC /* PreferenceItem.swift in Sources */,
+				F73E0AFA220F394900C31C8E /* NetworkHelpers.swift in Sources */,
+				F75BACF8220E93EA0056ECDC /* PreferenceTableViewCell.swift in Sources */,
+				F73E0AFC2210033500C31C8E /* OrderDetailsViewController.swift in Sources */,
+				F75BACF6220E90B50056ECDC /* Checkbox.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F75BACCC220E840F0056ECDC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F75BACD5220E840F0056ECDC /* One_Click_OrderTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F75BACD7220E84100056ECDC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F75BACE0220E84100056ECDC /* One_Click_OrderUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F75BACD2220E840F0056ECDC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F75BACBB220E840D0056ECDC /* One Click Order */;
+			targetProxy = F75BACD1220E840F0056ECDC /* PBXContainerItemProxy */;
+		};
+		F75BACDD220E84100056ECDC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F75BACBB220E840D0056ECDC /* One Click Order */;
+			targetProxy = F75BACDC220E84100056ECDC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F75BACC3220E840D0056ECDC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F75BACC4220E840D0056ECDC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F75BACC8220E840F0056ECDC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F75BACC9220E840F0056ECDC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F75BACE2220E84100056ECDC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F75BACE3220E84100056ECDC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F75BACE5220E84100056ECDC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 29C27D73F60EF1B9D4995E17 /* Pods-One Click Order.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8UR7G64J2J;
+				INFOPLIST_FILE = "One Click Order/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "harry.One-Click-Order";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F75BACE6220E84100056ECDC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C49AFF2ACB1820E946ACD7D2 /* Pods-One Click Order.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8UR7G64J2J;
+				INFOPLIST_FILE = "One Click Order/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "harry.One-Click-Order";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F75BACE8220E84100056ECDC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 23755C53D4805130894755A6 /* Pods-One Click OrderTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "One Click OrderTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "harry.One-Click-OrderTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/One Click Order.app/One Click Order";
+			};
+			name = Debug;
+		};
+		F75BACE9220E84100056ECDC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 579D354A71A442C254097B95 /* Pods-One Click OrderTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "One Click OrderTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "harry.One-Click-OrderTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/One Click Order.app/One Click Order";
+			};
+			name = Release;
+		};
+		F75BACEB220E84100056ECDC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BAD2D2547F30A15E7A4BA326 /* Pods-One Click OrderUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "One Click OrderUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "harry.One-Click-OrderUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "One Click Order";
+			};
+			name = Debug;
+		};
+		F75BACEC220E84100056ECDC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 992A311066345AEBF39BF6E1 /* Pods-One Click OrderUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "One Click OrderUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "harry.One-Click-OrderUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "One Click Order";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F75BACB7220E840D0056ECDC /* Build configuration list for PBXProject "One Click Order" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F75BACE2220E84100056ECDC /* Debug */,
+				F75BACE3220E84100056ECDC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F75BACE4220E84100056ECDC /* Build configuration list for PBXNativeTarget "One Click Order" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F75BACE5220E84100056ECDC /* Debug */,
+				F75BACE6220E84100056ECDC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F75BACE7220E84100056ECDC /* Build configuration list for PBXNativeTarget "One Click OrderTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F75BACE8220E84100056ECDC /* Debug */,
+				F75BACE9220E84100056ECDC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F75BACEA220E84100056ECDC /* Build configuration list for PBXNativeTarget "One Click OrderUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F75BACEB220E84100056ECDC /* Debug */,
+				F75BACEC220E84100056ECDC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F75BACB4220E840D0056ECDC /* Project object */;
+}

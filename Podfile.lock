@@ -1,0 +1,41 @@
+PODS:
+  - Alamofire (4.8.1)
+  - MaterialComponents/AnimationTiming (76.1.2)
+  - MaterialComponents/Palettes (76.1.2)
+  - MaterialComponents/private/Application (76.1.2)
+  - MaterialComponents/private/Math (76.1.2)
+  - MaterialComponents/TextFields (76.1.2):
+    - MaterialComponents/AnimationTiming
+    - MaterialComponents/Palettes
+    - MaterialComponents/private/Math
+    - MaterialComponents/Typography
+    - MDFInternationalization
+  - MaterialComponents/Typography (76.1.2):
+    - MaterialComponents/private/Application
+    - MaterialComponents/private/Math
+  - MDFInternationalization (2.0.0)
+  - NVActivityIndicatorView (4.6.1):
+    - NVActivityIndicatorView/Presenter (= 4.6.1)
+  - NVActivityIndicatorView/Presenter (4.6.1)
+
+DEPENDENCIES:
+  - Alamofire
+  - MaterialComponents/TextFields
+  - NVActivityIndicatorView
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - MaterialComponents
+    - MDFInternationalization
+    - NVActivityIndicatorView
+
+SPEC CHECKSUMS:
+  Alamofire: 16ce2c353fb72865124ddae8a57c5942388f4f11
+  MaterialComponents: 1aef341d47fbaed37ddb5163a01af94cb6da8506
+  MDFInternationalization: 010097556d6b09d2c4ea38e0820ea6d37be6a314
+  NVActivityIndicatorView: 4ca19fccc84595a78957336a086d00a49be6ce61
+
+PODFILE CHECKSUM: 1ede2d776fdb5ca7455c164ddcfea7553415c713
+
+COCOAPODS: 1.5.3
