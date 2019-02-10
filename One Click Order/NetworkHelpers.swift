@@ -182,6 +182,7 @@ struct NetworkHelpers {
     }
     
     static func statusTransform(status: String) -> String {
+        print("status:", status)
         switch(status) {
         case "PROCESSING":
             return "Processing your order"
@@ -210,6 +211,7 @@ struct NetworkHelpers {
         let order = UserDefaults.standard.string(forKey: "currentOrderApiKey")
         Alamofire.request("https://api.eatstreet.com/publicapi/v1/order/\(order ?? "")/statuses", method: HTTPMethod.get, parameters: nil, encoding: JSONEncoding.default, headers: ["X-Access-Token": "bba78694cd46693c"]).responseJSON {response in
             if let statuses = response.result.value as? [[String: Any]] {
+                //print("status value:", response.result.value)
                 if(statuses.count > 0) {
                 completion(statuses.map {status -> String in
                     if let status = status["status"] {

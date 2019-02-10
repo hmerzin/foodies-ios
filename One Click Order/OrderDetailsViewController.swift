@@ -20,7 +20,7 @@ class OrderDetailsViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        self.dismissButton.isHidden = true
+        self.dismissButton.layer.cornerRadius = 10
         activityIndicator.type = .pacman
         activityIndicator.startAnimating()
     }
@@ -28,7 +28,7 @@ class OrderDetailsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.dismissButton.isHidden = true
+        print(UserDefaults.standard.value(forKey: "currentOrderApiKey"))
         activityIndicator.type = .pacman
         activityIndicator.startAnimating()
         checkStatus()
@@ -48,6 +48,7 @@ class OrderDetailsViewController: UIViewController {
     }
     
     @IBAction func dismissPressed(_ sender: Any) {
+        UserDefaults.standard.setValue(nil, forKey: "currentOrderApiKey")
         presenter.dismiss(controller: self)
     }
     

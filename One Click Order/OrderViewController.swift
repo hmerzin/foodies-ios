@@ -23,6 +23,11 @@ class OrderViewController: UIViewController {
         super.viewDidLoad()
         self.foodsCountLabel.text = String(foodsCount)
         self.letsEatButton.layer.cornerRadius = 10
+        if let orders = UserDefaults.standard.array(forKey: "ordersArray") {
+            print(orders)
+        } else {
+            UserDefaults.standard.setValue([], forKey: "ordersArray")
+        }
         //let bgImage = #imageLiteral(resourceName: "48")
         //self.view.backgroundColor = UIColor.init(patternImage: bgImage)
     }
@@ -70,6 +75,8 @@ class OrderViewController: UIViewController {
         print("eatpressed")
         NetworkHelpers.placeOrder(numFoods: self.foodsCount) { orderJSON in
             print(orderJSON)
+            var orders = UserDefaults.standard.array(forKey: "ordersArray")!
+            UserDefaults.standard.setValue(orders.append(UserDefaults.standard.value(forKey: "currentOrderApiKey")!), forKey: "ordersArray")
             self.checkOrderStatus()
         }
     }
